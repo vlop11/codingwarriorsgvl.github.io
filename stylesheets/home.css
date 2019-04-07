@@ -1,20 +1,45 @@
 .jumbotron {
     height: 100vh;
-    padding-top: 50vh;
+    padding-top: 40vh;
     text-align: center;
 }
 
 .jumbotron>h1 {
     font-size: 30px;
+    opacity: 0;
+    animation: jumboanimation 1s linear 2s 1 normal;
+    animation-fill-mode: forwards;
 }
 
+#title {
+    font-size: 60px;
+}
+
+/*"Scroll Down" text, which is set to bottom of jumbotron*/
 #jumbo-footer {
-    text-align: center;
-    position: fixed;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    clear: both;
 }
 
+/*changes made specifically to font of jumbo-footer*/
 #jumbo-footer>p {
+    text-align: center;
     padding: 0;
     margin: 0;
+    opacity: 0;
+    animation: jfootanimation 2s linear 4s 1 normal;
+    animation-fill-mode: forwards;
 }
 
+@keyframes jumboanimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes jfootanimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
