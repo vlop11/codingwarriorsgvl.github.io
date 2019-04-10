@@ -1,0 +1,102 @@
+/*all css animations------------------------------*/
+
+@keyframes jumboanimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes jfootanimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes bgdark {
+    0% {background-color: white;}
+    100% {background-color: #d0d0d0}
+}
+
+/*-----------------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+}
+
+body {
+    background-color: #d0d0d0;
+}
+
+#school-logo {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background: white;
+    animation: jumboanimation 0.5s linear 1.2s 1 reverse;
+    animation-fill-mode: forwards;
+}
+
+#school-logo>p {
+    text-align: center;
+    padding-top: 30vh;
+}
+
+.jumbotron {
+    height: 100vh;
+    padding-top: 40vh;
+    text-align: center;
+    background-color: white;
+    animation: bgdark 0.7s linear 1.7s 1 normal;
+    animation-fill-mode: forwards;
+    margin-bottom: 0;
+}
+
+.jumbotron>h1 {
+    font-size: 30px;
+    opacity: 0;
+    animation: jumboanimation 1s linear 3.2s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+#title {
+    font-size: 60px;
+}
+
+#jumbo-footer>a:hover {
+    color: #0a8f0a;
+    text-decoration: none;
+}
+
+/*"Scroll Down" text, which is set to bottom of jumbotron*/
+#jumbo-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    clear: both;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    animation: jfootanimation 2s linear 5.2s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+.greentxt {
+    color: #0ec30e;
+}
+
+.text-group {
+    padding: 2% 2% 0% 2%;
+    height: 100vh;
+}
+
+.light-bg-group {
+    background-color: #f0f0f0;
+}
+
+.dark-bg-group {
+    background-color: #dddddd;
+}

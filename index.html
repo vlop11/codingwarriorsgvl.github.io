@@ -1,9 +1,76 @@
+<!-- The UNG-GVL Coding Warriors Website (c) Woody Allen Montilus 2019-->
+
 <!doctype html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+
+    <head>
+        <title>Coding Warriors UNG-GVL</title>
+
+        <!--    imports Bootstrap 4 library-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!--    imports home.css stylesheet-->
+        <link href="stylesheets/home.css" rel="stylesheet">
+
+        <!--   AOS scroll reveal css import  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!--   AOS scroll reveal js import  -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <!------------------------------------>
+
+        <!--  Start screen logo + jumbotron greeting  -->
+        <div id="school-logo">
+            <p><img src="images/nighthawks.png" class="img-fluid"></p> <!-- Image wrapped in <p> tag to center on screen -->
+        </div>
+
+
+        <div class="jumbotron">
+            <h1>UNG - GVL</h1>
+            <h1 id="title" class="greentxt">Coding Warriors</h1>
+        </div>  
+
+        <div id="jumbo-footer">
+            <a href="#scroll-target">Scroll Down<br> ▼</a>
+        </div>
+
+        <!---------------------------------------------->
+        <!--    Dummy scroll target -->
+        <div id="scroll-target"></div>
+
+        <div class="light-bg-group text-group" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <h1><b class="greentxt">WHO</b> are we?</h1>
+
+            <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+        </div>
+
+        <div class="dark-bg-group text-group" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <h1><b class="greentxt">WHAT</b> do we do?</h1>
+
+            <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+        </div>
+
+        <div class="light-bg-group text-group" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <h1><b class="greentxt">WHY</b> should I join?</h1>
+
+            <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+        </div>
+
+        <div class="dark-bg-group text-group" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <h1><b class="greentxt">WHEN</b> and <b class="greentxt">WHERE</b> do we meet?</h1>
+
+            <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+        </div>
+
+        <script type="text/javascript" src="scripts/home.js"></script>
+
+    </body>
 </html>
