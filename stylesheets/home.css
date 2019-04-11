@@ -1,11 +1,6 @@
 /*all css animations------------------------------*/
 
-@keyframes jumboanimation {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes jfootanimation {
+@keyframes fade-in {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
@@ -21,12 +16,12 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
-    color: black;
-}
-
 body {
     background-color: #d0d0d0;
+}
+
+a {
+    color: black;
 }
 
 #school-logo {
@@ -34,7 +29,7 @@ body {
     position: absolute;
     width: 100%;
     background: white;
-    animation: jumboanimation 0.5s linear 1.2s 1 reverse;
+    animation: fade-in 0.5s linear 1.2s 1 reverse;
     animation-fill-mode: forwards;
 }
 
@@ -56,7 +51,7 @@ body {
 .jumbotron>h1 {
     font-size: 30px;
     opacity: 0;
-    animation: jumboanimation 1s linear 3.2s 1 normal;
+    animation: fade-in 1s linear 3.2s 1 normal;
     animation-fill-mode: forwards;
 }
 
@@ -80,7 +75,7 @@ body {
     padding: 0;
     margin: 0;
     opacity: 0;
-    animation: jfootanimation 2s linear 5.2s 1 normal;
+    animation: fade-in 2s linear 5.2s 1 normal;
     animation-fill-mode: forwards;
 }
 
@@ -93,10 +88,34 @@ body {
     height: 100vh;
 }
 
+.text-group-s {
+    padding: 2% 2% 0% 2%;
+    height: 100vh;
+}
+
 .light-bg-group {
     background-color: #f0f0f0;
 }
 
 .dark-bg-group {
     background-color: #dddddd;
+}
+
+.btn-success {
+    background-color: #0ec30e;
+}
+
+#recruit {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 1px 3px black;
+    border-radius: 20px;
+}
+
+#recruit>* {
+    text-align: center;
+}
+
+#recruit>a {
+    padding-top: 5%;
 }
