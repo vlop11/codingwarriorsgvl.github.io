@@ -1,0 +1,27 @@
+body {
+    background-color: #d0d0d0;
+}
+
+a {
+    color: black;
+}
+
+.greentxt {
+    color: #0ec30e;
+}
+
+.light-bg-group {
+    background-color: #f0f0f0;
+}
+
+.dark-bg-group {
+    background-color: #dddddd;
+}
+
+.btn-success {
+    background-color: #0ec30e;
+}
+
+#accounts {
+    height: 100vh;
+}
