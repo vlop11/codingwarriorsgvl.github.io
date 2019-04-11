@@ -4,8 +4,25 @@ body {
 
 a {
     color: black;
+    
 }
 
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbotron {
+    background-color: #999;
+    border-radius: 0px;
+    transition: background-color 0.2s linear 0s;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.jumbotron:hover {
+    color: white;
+    background-color: #0ec30e;
+}
 .greentxt {
     color: #0ec30e;
 }
