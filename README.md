@@ -1,6 +1,6 @@
 # codingwarriorsgvl.github.io
 
-Code for the Coding Warriors webiste! This README serves as a running todo list
+Here is the code for the Coding Warriors website! This README serves as a running todo list
 
 # To Do
 * Add content for each section on index.html
